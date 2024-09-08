@@ -74,9 +74,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/Mrz051/vip2/master/izin | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/premium05/senjavip/master/izin | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/Mrz051/vip2/master/izin | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/premium05/senjavip/master/izin | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -95,7 +95,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/Mrz051/vip2/master/izin | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/premium05/senjavip/master/izin | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -103,7 +103,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/Mrz051/vip2/master/"
+REPO="https://raw.githubusercontent.com/premium05/senjavip/master/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -256,8 +256,8 @@ fi
 }
 clear
 restart_system(){
-USRSC=$(curl -sS https://raw.githubusercontent.com/Mrz051/vip2/master/izin | grep $MYIP | awk '{print $2}')
-EXPSC=$(curl -sS https://raw.githubusercontent.com/Mrz051/vip2/master/izin | grep $MYIP | awk '{print $3}')
+USRSC=$(curl -sS https://raw.githubusercontent.com/premium05/senjavip/master/izin | grep $MYIP | awk '{print $2}')
+EXPSC=$(curl -sS https://raw.githubusercontent.com/premium05/senjavip/master/izin | grep $MYIP | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>

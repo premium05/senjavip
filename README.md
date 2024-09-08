@@ -7,14 +7,14 @@
 
 ### INSTALL SCRIPT 
 ```
-apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/Mrz051/vip2/master/premi.sh && chmod +x premi.sh && ./premi.sh
+apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/premium05/senjavip/master/premi.sh && chmod +x premi.sh && ./premi.sh
 
 ```
 
 ### PERINTAH UPDATE
 ```
 
-wget https://raw.githubusercontent.com/Mrz051/vip2/master/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/premium05/senjavip/master/update.sh && chmod +x update.sh && ./update.sh
 
 ```
 
